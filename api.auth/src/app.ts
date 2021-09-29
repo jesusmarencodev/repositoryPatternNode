@@ -1,7 +1,6 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 process.env.APP_ENV = process.env.APP_ENV || 'development';
-
-// Env files
+// Env files 
 import dotenv from 'dotenv';
 
 dotenv.config({
@@ -26,4 +25,5 @@ app.use(loadControllers(
     { cwd: __dirname })
 );
 
+//export app
 export { app };
